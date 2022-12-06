@@ -48,7 +48,7 @@
 //=======================================================>>>
 
 
-// is function me power function ka kam  se kar rahe he
+
 // function pow(b,exp){
 //   if(exp== 0) return 1
 //   console.log(b,exp)
