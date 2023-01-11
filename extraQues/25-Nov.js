@@ -25,6 +25,33 @@ x = x.slice(y.length)
 
 // Reverse Array without using extra array
 
+// brute force:
+
+// let arr=[1,2,3,4,5], rev=[];
+
+// for(let i=arr.length-1; i>=0; i--){
+//     rev.push(arr[i])
+
+// }
+// console.log(rev)
+
+//==========================>>>
+//optimise solution:=>>>
+
+function rev(arr){
+    let i=0;
+    let j= arr.length-1;
+    while(i<j){
+        arr[i]=arr[i]+arr[j];
+        arr[j]=arr[i]-arr[j];
+        arr[i]=arr[i]-arr[j];
+        i++;
+        j--;
+    }
+    return arr;
+}
+console.log(rev([1,2,3,4,5,6,7]))
+
 // let arr = [12, 4, 5, 67, 34]  //=> [34,67,5,4,12]
 
 // let i = 0
